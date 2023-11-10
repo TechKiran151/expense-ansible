@@ -1,5 +1,6 @@
 - name: Expense frontend Setup
   hosts: all
+  become: yes #it is going to execute all the things a sudo
   tasks:
     - name: Installing nginx
       ansible.builtin.dnf:
